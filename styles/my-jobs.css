@@ -1,0 +1,187 @@
+/* --- Базовые сбросы и стили --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E8D8C4;
+    color: #561C24;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* --- Контейнер --- */
+  .container {
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #c5aa85;
+  }
+  
+  /* --- Заголовок и кнопка --- */
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    color: #561C24;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #561C24;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .button:hover {
+    background-color: #6D2932;
+  }
+  
+  /* --- Список заказов --- */
+  .jobs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* --- Карточка заказа --- */
+  .card {
+    background-color: #fffaf3;
+    border: 1px solid #d1b58f;
+    border-radius: 10px;
+    box-shadow: -1px 5px 7px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  .card-header {
+    background-color: #fffaf3;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    /* text-align: center; */
+  }
+  
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #561C24;
+  }
+  
+  .card-category {
+    font-size: 14px;
+    color: #6D2932;
+  }
+  
+  .card-content {
+    padding: 0 20px;
+    /* text-align: center; */
+  }
+  
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #561C24;
+  }
+  
+  .status {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  
+  .status .active {
+    color: #28a745;
+  }
+  
+  .status .completed {
+    color: #007bff;
+  }
+  
+  .card-footer {
+    background-color: #fffaf3;
+    padding: 15px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  .button-secondary {
+    display: inline-block;
+    background-color: #561C24;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .button-secondary:hover {
+    background-color: #6D2932;
+  }
+  
+  /* --- Модификаторы отступов --- */
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+  
+  .mb-8 {
+    margin-bottom: 15px;
+  }
+  
+  .mb-16 {
+    padding-top: 0;
+  }
+  
+  .pad {
+    padding: 15px 10px;
+  }
+  
+  /* --- Адаптивность --- */
+  @media (max-width: 768px) {
+
+  
+    .title {
+      font-size: 22px;
+    }
+  
+    .button {
+      padding: 12px 30px;
+      font-size: 14px;
+    }
+  
+    .card-title {
+      font-size: 18px;
+    }
+  
+    .price {
+      font-size: 16px;
+    }
+  
+    .button-secondary {
+      padding: 10px 30px;
+      font-size: 14px;
+    }
+  }
+  
