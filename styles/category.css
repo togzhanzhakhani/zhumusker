@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #E8D8C4; /* Основной цвет фона */
+    color: #561C24; /* Основной цвет текста */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  /* --- Карточка --- */
+  .card {
+    background-color: #fff6ec; /* Основной цвет */
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #c5aa85; /* Основной цвет */
+  }
+  
+  .card-header {
+    background-color: #6D2932;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .card-description {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  /* --- Содержимое карточки --- */
+  .card-content {
+    padding: 20px;
+    background-color: #fffaf3;
+  }
+  
+  .checkbox-group {
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .checkbox-item input[type="checkbox"] {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #561C24; /* Основной цвет */
+  }
+  
+  .checkbox-item label {
+    font-size: 18px;
+    color: #6D2932; /* Темный акцент */
+  }
+  
+  /* --- Кнопка отправки --- */
+  .button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #561C24; /* Основной цвет */
+    color: #fff; /* Основной фон */
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #6D2932;
+  }
+  
+  /* --- Адаптивность --- */
+  @media (max-width: 768px) {
+    .card {
+      width: 95%;
+    }
+  
+    .card-title {
+      font-size: 22px;
+    }
+  
+    .card-description {
+      font-size: 16px;
+    }
+  
+    .button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+  

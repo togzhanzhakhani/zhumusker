@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Создать объявление</title>
+  <link rel="stylesheet" href="styles/adpost.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h1 class="card-title">Создать объявление</h1>
+      <p class="card-description">Заполните информацию о вашем задании</p>
+    </div>
+
+    <div class="card-content">
+      <form id="jobForm" class="form">
+        
+        <div class="form-group">
+          <label for="jobType">Тип работы</label>
+          <select id="jobType" onchange="toggleFields()">
+            <option value="freelance">Фриланс (онлайн работа)</option>
+            <option value="shift">Смена (офлайн работа)</option>
+          </select>
+        </div>
+
+        <div id="freelanceFields" class="form-group">
+          <label for="category">Категория</label>
+          <select id="category">
+            <option value="design">Дизайн</option>
+            <option value="development">Разработка</option>
+            <option value="writing">Копирайтинг</option>
+            <option value="marketing">Маркетинг</option>
+            <option value="video">Видеопроизводство</option>
+          </select>
+        </div>
+
+        <div id="shiftFields" class="shift-fields">
+          <div class="form-group">
+            <label for="location">Место работы</label>
+            <input type="text" id="location" placeholder="Введите адрес или название места">
+          </div>
+
+          <div class="form-group">
+            <label for="date">Дата</label>
+            <input type="date" id="date">
+          </div>
+
+          <div class="form-group">
+            <label for="time">Время</label>
+            <input type="time" id="time">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="title">Заголовок</label>
+          <input type="text" id="title" placeholder="Введите заголовок объявления">
+        </div>
+
+        <div class="form-group">
+          <label for="description">Описание</label>
+          <textarea id="description" placeholder="Опишите задание подробно"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="price">Цена</label>
+          <input type="number" id="price" placeholder="Введите стоимость в тенге">
+        </div>
+
+        <button type="submit" class="btn">Создать объявление</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  const toggleFields = () => {
+    const jobType = document.getElementById('jobType').value;
+    const freelanceFields = document.getElementById('freelanceFields');
+    const shiftFields = document.getElementById('shiftFields');
+    
+    if (jobType === 'freelance') {
+      freelanceFields.style.display = 'block';
+      shiftFields.style.display = 'none';
+    } else {
+      freelanceFields.style.display = 'none';
+      shiftFields.style.display = 'block';
+    }
+  }
+
+  document.getElementById('jobForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Объявление создано!');
+  });
+
+  // Инициализация отображения полей при загрузке страницы
+  toggleFields();
+</script>
+
+</body>
+</html>

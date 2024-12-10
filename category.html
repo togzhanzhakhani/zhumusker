@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Категории</title>
+  <link rel="stylesheet" href="styles/category.css">
+</head>
+<body>
+
+  <!-- Основной контейнер -->
+  <div class="container">
+    <!-- Карточка -->
+    <div class="card">
+      <!-- Заголовок карточки -->
+      <div class="card-header">
+        <h1 class="card-title">Выберите категории</h1>
+        <p class="card-description">Укажите, какие категории работы вас интересуют</p>
+      </div>
+
+      <!-- Содержимое карточки -->
+      <div class="card-content">
+        <form action="jobs.html" method="GET">
+          <div class="checkbox-group">
+            <!-- Категории -->
+            <div class="checkbox-item">
+              <input type="checkbox" id="design" name="categories" value="design">
+              <label for="design">Дизайн</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="development" name="categories" value="development">
+              <label for="development">Разработка</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="writing" name="categories" value="writing">
+              <label for="writing">Копирайтинг</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="marketing" name="categories" value="marketing">
+              <label for="marketing">Маркетинг</label>
+            </div>
+            <div class="checkbox-item">
+              <input type="checkbox" id="video" name="categories" value="video">
+              <label for="video">Видеопроизводство</label>
+            </div>
+          </div>
+
+          <!-- Кнопка отправки -->
+          <button type="submit" class="button">Показать объявления</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

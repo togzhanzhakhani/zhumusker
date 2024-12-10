@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Выбор типа работы</title>
+  <link rel="stylesheet" href="styles/type.css">
+</head>
+<body>
+
+  <div class="container">
+    <!-- Заголовок -->
+    <div class="header">
+      <h1 class="title">Выберите тип работы</h1>
+      <p class="description">Укажите, какой тип работы вас интересует</p>
+    </div>
+
+    <!-- Форма -->
+    <div class="form-content">
+      <form id="job-form">
+        
+        <!-- Группа радио-кнопок -->
+        <div class="radio-group">
+          <!-- Вариант 1 -->
+          <div class="radio-item">
+            <input type="radio" id="freelance" name="jobType" value="freelance" checked>
+            <label for="freelance">Фриланс (онлайн работа)</label>
+          </div>
+
+          <!-- Вариант 2 -->
+          <div class="radio-item">
+            <input type="radio" id="shift" name="jobType" value="shift">
+            <label for="shift">Выйти на смену (офлайн работа)</label>
+          </div>
+        </div>
+
+        <!-- Кнопка отправки -->
+        <button type="submit" class="button">Продолжить</button>
+
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Получаем элементы
+    const form = document.getElementById('job-form');
+
+    // Обработчик отправки формы
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Останавливаем отправку формы
+
+      // Получаем выбранный тип работы
+      const selectedJobType = document.querySelector('input[name="jobType"]:checked').value;
+
+      if (selectedJobType === 'freelance') {
+        window.location.href = 'category.html'; // Перенаправляем на страницу категорий фриланса
+      } else if (selectedJobType === 'shift') {
+        window.location.href = 'shift-jobs.html'; // Перенаправляем на страницу работы по сменам
+      }
+    });
+  </script>
+
+</body>
+</html>

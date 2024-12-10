@@ -1,21 +1,237 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    text-align: center;
+/* Базовые сбросы и стили */
+* {
     margin: 0;
     padding: 0;
-}
-
-h1 {
-    color: #555;
-}
-
-a {
-    color: #007BFF;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial';
+    background-color: #E8D8C4;
+    color: #561C24;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  a {
     text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  /* --- Стили для контейнера --- */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* --- Стили для Header --- */
+  header {
+    background: #561C24;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    color: #fff;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  /* --- Главный контент --- */
+  main {
+    flex: 1;
+  }
+  
+  section {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  section h2, section h3 {
+    color: #561C24;
+  }
+  
+  section p {
+    color: #6D2932;
+  }
+  
+  .btn {
+    background-color: #561C24;
+    color: #fff;
+    padding: 0.7rem 2.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #6D2932;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  /* --- Карточки --- */
+  .card {
+    background-color: #fffaf3;
+    border: 2px solid #dcc6ab;
+    border-radius: 10px;
+    box-shadow: -1px 5px 7px rgba(0,0,0,0.1);
+  }
+  
+  .card-header {
+    background-color: #6D2932;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .card-title {
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+  }
+  
+  .card ul {
+    text-align: left;
+  }
+  
+  .card li {
+    color: #561C24;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* --- Кнопки --- */
+  .button {
+    background-color: #561C24;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+  }
+  
+  .button:hover {
+    background-color: #6D2932;
+  }
+  .f1{
+    font-size: 1.4rem;
+  }
+  /* --- Стили для Footer --- */
+  footer {
+    background-color: #6D2932;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  footer p {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* --- Адаптивность --- */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header p {
+      font-size: 1.5rem;
+    }
+  
+    section h2, section h3 {
+      font-size: 2rem;
+    }
+  
+    button {
+      padding: 0.8rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .card {
+      margin-bottom: 2rem;
+    }
+  
+    .card-title {
+      font-size: 1.2rem;
+    }
+  
+    .card-content {
+      padding: 1rem;
+    }
+  }
+  .mb-10{
+    margin-bottom: 10px;
 }
+.pad{
+    padding: 15px 10px;
+}
+.mb-8{
+    margin-bottom: 15px;
+}
+.mb-16{
+    padding-top: 0;
+}
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.9rem;
+    }
+  
+    header p {
+      font-size: 1.1rem;
+    }
+  
+    section h2, section h3 {
+      font-size: 1.8rem;
+    }
+  
+    button {
+      padding: 0.7rem 1.2rem;
+      font-size: 0.8rem;
+    }
+  
+    .card {
+      margin-bottom: 1.5rem;
+    }
+  
+    .card-title {
+      font-size: 1.4rem;
+    }
 
-a:hover {
-    text-decoration: underline;
-}
+    .mb-10{
+        margin-bottom: 10px;
+    }
+  
+    .card-content {
+      padding: 0.8rem;
+    }
+    .pad{
+        padding: 15px 10px;
+    }
+    .mb-8{
+        margin-bottom: 15px;
+    }
+    .mb-16{
+        padding-top: 0;
+    }
+  }
+  

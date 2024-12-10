@@ -1,16 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой сайт</title>
+    <title>Zhedelusta</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <h1>Добро пожаловать на мой сайт!</h1>
-    <p>Это простая HTML-страница.</p>
-    <a href="about.html">О нас</a>
-    <img src="images/logo.png" alt="Логотип" width="200">
-    <script src="scripts/app.js"></script>
+<body class="min-h-screen bg-background">
+
+<header class="p-6 text-center bg-gradient-to-r from-accent to-secondary">
+    <h1 class="text-5xl font-bold text-primary mb-2">Zhedelusta</h1>
+    <p class="text-xl text-muted-foreground">Найдите работу или исполнителя</p>
+</header>
+
+<main class="container mx-auto px-4 py-12">
+    <section class="text-center">
+        <h2 class="text-4xl font-semibold mb-6 text-foreground">Добро пожаловать на Zhedelusta</h2>
+        <p class="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Zhedelusta — платформа, соединяющая талантливых исполнителей и амбициозных заказчиков для успешной реализации проектов.
+        </p>
+        <div class="flex justify-center">
+            <a href="auth.html" class="btn">
+                Начать
+            </a>
+        </div>
+    </section>
+
+    <section class="grid md:grid-cols-2 gap-10 mb-16">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Для исполнителей</h3>
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li>Находите интересные проекты в различных сферах</li>
+                    <li>Работайте удаленно или на месте</li>
+                    <li>Развивайте свои навыки и расширяйте портфолио</li>
+                    <li>Получите доступ к заказам сразу после регистрации</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Для заказчиков</h3>
+            </div>
+            <div class="card-content">
+                <ul>
+                    <li>Находите квалифицированных специалистов для ваших проектов</li>
+                    <li>Размещайте задания для онлайн и офлайн работы</li>
+                    <li>Выбирайте исполнителей на основе рейтинга и отзывов</li>
+                    <li>Экономьте время и ресурсы на поиске сотрудников</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="mb-16">
+        <h3 class="text-3xl font-semibold text-center mb-10 text-foreground">Почему Zhedelusta?</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card pad">
+                <h3 class="f1">Быстрый старт</h3>
+                <p>Начните работу или найдите исполнителя в течение нескольких минут после регистрации</p>
+            </div>
+            <div class="card pad">
+                <h3 class="f1">Безопасность</h3>
+                <p>Мы гарантируем безопасность сделок и конфиденциальность ваших данных</p>
+            </div>
+            <div class="card pad">
+                <h3 class="f1">Выгодные условия</h3>
+                <p>Справедливые цены для заказчиков и достойная оплата для исполнителей</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-center mb-16">
+        <h3 class="text-3xl font-semibold mb-6 text-foreground">Готовы начать?</h3>
+        <p class="text-lg text-muted-foreground mb-8">
+            Присоединяйтесь к тысячам пользователей, которые уже оценили преимущества Zhedelusta!
+        </p>
+        <div class="flex justify-center">
+            <a href="auth.html" class="btn">
+                Зарегистрироваться
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="bg-secondary p-6 text-center text-secondary-foreground">
+    <p class="text-base">&copy; 2023 Zhedelusta. Все права защищены.</p>
+    <p class="mt-2 text-sm">Мы соединяем таланты с возможностями</p>
+</footer>
+
+<script src="scripts/app.js"></script>
 </body>
 </html>

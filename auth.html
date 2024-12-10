@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Аутентификация Zhedelusta</title>
+  <link rel="stylesheet" href="styles/auth.css">
+</head>
+<body>
+
+  <div class="screen-center">
+    <div class="auth-box">
+      <div class="auth-header">
+        <h1 class="auth-title" id="form-title">Вход в Zhedelusta</h1>
+        <p class="auth-description" id="form-description">Войдите в свой аккаунт</p>
+      </div>
+
+      <div class="auth-tabs">
+        <button class="tab-switcher active-tab" id="login-tab">Вход</button>
+        <button class="tab-switcher" id="register-tab">Регистрация</button>
+      </div>
+
+      <!-- Вкладка Вход -->
+      <form class="auth-form" id="login-form">
+        <input type="email" placeholder="Email" class="input-field" required>
+        <input type="password" placeholder="Пароль" class="input-field" required>
+        <button type="submit" class="submit-btn">Войти</button>
+      </form>
+
+      <!-- Вкладка Регистрация -->
+      <form class="auth-form hidden" id="register-form">
+        <input type="text" placeholder="Имя" class="input-field" required>
+        <input type="email" placeholder="Email" class="input-field" required>
+        <input type="password" placeholder="Пароль" class="input-field" required>
+        <input type="password" placeholder="Подтвердите пароль" class="input-field" required>
+
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="role" value="client" checked> Я заказчик
+          </label>
+          <label>
+            <input type="radio" name="role" value="freelancer"> Я исполнитель
+          </label>
+        </div>
+
+        <button type="submit" class="submit-btn">Зарегистрироваться</button>
+      </form>
+
+      <p class="toggle-text">
+        <span id="toggle-message">Нет аккаунта?</span> 
+        <button id="toggle-button" class="link-btn">Зарегистрироваться</button>
+      </p>
+    </div>
+  </div>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
