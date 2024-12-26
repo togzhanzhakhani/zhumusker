@@ -8,16 +8,27 @@
 </head>
 <body class="min-h-screen bg-background">
 
-<header class="p-6 text-center bg-gradient-to-r from-accent to-secondary">
-    <h1 class="text-5xl font-bold text-primary mb-2">Zhedelusta</h1>
-    <p class="text-xl text-muted-foreground">Найдите работу или исполнителя</p>
+<header class="p-6 bg-gradient-to-r from-accent to-secondary">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="head">
+        <img src="images/logo.jpg" alt="">
+        <h1 class="text-3xl font-bold text-primary">Zhedelusta</h1>
+        </div>
+        <nav>
+            <ul class="flex space-x-6 text-lg text-primary">
+                <li><a href="#about" class="hover:text-secondary">О нас</a></li>
+                <li><a href="#project" class="hover:text-secondary">О проекте</a></li>
+                <li><a href="#contact" class="hover:text-secondary">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <main class="container mx-auto px-4 py-12">
     <section class="text-center">
         <h2 class="text-4xl font-semibold mb-6 text-foreground">Добро пожаловать на Zhedelusta</h2>
         <p class="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Zhedelusta — платформа, соединяющая талантливых исполнителей и амбициозных заказчиков для успешной реализации проектов.
+            Платформа, соединяющая талантливых исполнителей и амбициозных заказчиков для успешной реализации проектов.
         </p>
         <div class="flex justify-center">
             <a href="auth.html" class="btn">
@@ -26,7 +37,33 @@
         </div>
     </section>
 
-    <section class="grid md:grid-cols-2 gap-10 mb-16">
+    <section id="about" class="grid md:grid-cols-2 gap-10 mb-16">
+        <h2 class="text-3xl font-semibold text-center mb-6 text-foreground">О нас</h2>
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="team-member text-center">
+                <img src="images/abay.jpg" alt="Ваше имя" class="w-40 h-40 rounded-full mx-auto">
+                <h3 class="mt-4 text-xl font-semibold">Абай Амирбекулы</h3>
+                <p class="text-muted-foreground">CEO</p>
+            </div>
+            <div class="team-member text-center">
+                <img src="images/me.jpg" alt="Имя парня" class="w-40 h-40 rounded-full mx-auto">
+                <h3 class="mt-4 text-xl font-semibold">Тогжан Жахани</h3>
+                <p class="text-muted-foreground">CTO</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="project" class="mb-16">
+        <h2 class="text-3xl font-semibold text-center mb-6 text-foreground">О проекте</h2>
+        <div class="video-container">
+            <iframe 
+                src="https://www.youtube.com/embed/yZ6iR8qpPns" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
         <div class="card">
             <div class="card-header">
                 <h3 class="card-title">Для исполнителей</h3>
@@ -54,9 +91,6 @@
                 </ul>
             </div>
         </div>
-    </section>
-
-    <section class="mb-16">
         <h3 class="text-3xl font-semibold text-center mb-10 text-foreground">Почему Zhedelusta?</h3>
         <div class="grid md:grid-cols-3 gap-8">
             <div class="card pad">
@@ -84,6 +118,15 @@
                 Зарегистрироваться
             </a>
         </div>
+    </section>
+
+    <section id="contact" class="mb-16 text-center">
+        <h2 class="text-3xl font-semibold mb-6 text-foreground">Контакты</h2>
+        <p class="text-lg text-muted-foreground mb-6">Свяжитесь с нами для получения дополнительной информации.</p>
+        <ul class="text-lg">
+            <li>Email: <a href="mailto:zhedelusta@gmail.com" class="hover:text-secondary">zhedelusta@gmail.com</a></li>
+            <li>Телефон: +7 (707) 647-73-44</li>
+        </ul>
     </section>
 </main>
 

@@ -34,7 +34,7 @@
   /* --- Стили для Header --- */
   header {
     background: #1c2d56;
-    padding: 2rem 1rem;
+    padding: 1rem 2rem;
     text-align: center;
   }
   
@@ -89,8 +89,8 @@
   
   /* --- Карточки --- */
   .card {
-    background-color: #fffaf3;
-    border: 2px solid #efe6db;
+    background-color: #fff;
+    border: 2px solid #dfd9d2;
     border-radius: 10px;
     box-shadow: -1px 5px 7px rgba(0,0,0,0.1);
   }
@@ -237,3 +237,83 @@
     }
   }
   
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.head{
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+.head img{
+  width: 30%;
+}
+
+/* Адаптивные стили для телефона */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Столбец для телефонов */
+        align-items: center;    /* Центрировать элементы */
+        gap: 0rem;              /* Интервал между ссылками */
+    }
+
+    nav a {
+        font-size: 1.25rem; /* Увеличить размер шрифта для удобства */
+    }
+}
+.team-member img {
+  width: 100%;
+}
+
+#about{
+  margin-top: -1rem;
+  padding-bottom: 0;
+}
+
+#about h3{
+  font-size: 25px;
+}
+
+#about p{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 177.78%; /* Соотношение 16:9 (100% / 9 * 16) */
+  max-width: 100%; /* Опционально: ограничить ширину для мобильных устройств */
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+
+#contact li{
+  font-weight: 600;
+}
