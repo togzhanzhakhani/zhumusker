@@ -7,8 +7,8 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    background-color: #E8D8C4;
-    color: #561C24;
+    background-color: #f1f1f0;
+    color: #1c2d56;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@
     background-color: #fffaf3;
     width: 400px;
     border-radius: 15px;
-    border: 2px solid #dcc6ab;
+    border: 2px solid #fff9f1;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     padding: 30px;
   }
@@ -38,18 +38,19 @@
   
   .auth-title {
     font-size: 1.8rem;
-    color: #561C24;
+    color: #1c2d56;
   }
   
   .auth-description {
-    color: #6D2932;
+    color: #1c2d56;
     font-size: 1rem;
+    font-weight: 600;
   }
   
   .auth-tabs {
     display: flex;
     margin-bottom: 20px;
-    background-color: #E8D8C4;
+    background-color: #ebe4da;
     padding: 0.2rem;
     border-radius: 0.3rem;
   }
@@ -57,14 +58,15 @@
   .tab-switcher {
     background-color: transparent;
     border: none;
-    color: #561C24;
+    color: #1c2d56;
     font-weight: bold;
     cursor: pointer;
     width: 50%;
+    font-weight: 600;
   }
   
   .active-tab {
-    color: #6D2932;
+    color: #1c2d56;
     background-color: #fff;
     padding: 5px 30px;
     border-radius: 0.2rem;
@@ -79,13 +81,13 @@
   .input-field {
     width: 100%;
     padding: 10px 15px;
-    border: 1px solid #dcc6ab;
+    border: 1px solid #95918c;
     border-radius: 30px;
     font-size: 1rem;
   }
   
   .submit-btn {
-    background-color: #561C24;
+    background-color: #1c2d56;
     color: #fff;
     border: none;
     padding: 12px 0;
@@ -97,7 +99,7 @@
   }
   
   .submit-btn:hover {
-    background-color: #6D2932;
+    background-color: #1c2d56;
   }
   
   .radio-group {
@@ -118,14 +120,16 @@
   .toggle-text {
     text-align: center;
     margin-top: 15px;
+    font-weight: 600;
   }
   
   .link-btn {
     background: none;
     border: none;
-    color: #561C24;
+    color: #1c2d56;
     font-weight: bold;
     cursor: pointer;
+    font-weight: 600;
   }
   
   .hidden {
@@ -140,5 +144,4 @@
   .auth-box {
     width: 340px;
   }
-  
 }

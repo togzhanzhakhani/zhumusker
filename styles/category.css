@@ -6,8 +6,8 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    background-color: #E8D8C4; /* Основной цвет фона */
-    color: #561C24; /* Основной цвет текста */
+    background-color: #f1f1f0; /* Основной цвет фона */
+    color: #1c2d56; /* Основной цвет текста */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,17 +24,17 @@
   
   /* --- Карточка --- */
   .card {
-    background-color: #fff6ec; /* Основной цвет */
+    background-color: #fff; /* Основной цвет */
     border-radius: 15px;
     overflow: hidden;
     width: 100%;
     max-width: 400px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border: 1px solid #c5aa85; /* Основной цвет */
+    border: 1px solid #fff9f1; /* Основной цвет */
   }
   
   .card-header {
-    background-color: #6D2932;
+    background-color: #1c2d56;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -72,12 +72,13 @@
     margin-right: 10px;
     width: 20px;
     height: 20px;
-    border: 2px solid #561C24; /* Основной цвет */
+    border: 2px solid #1c2d56; /* Основной цвет */
   }
   
   .checkbox-item label {
     font-size: 18px;
-    color: #6D2932; /* Темный акцент */
+    color: #1c2d56;
+    font-weight: 600;
   }
   
   /* --- Кнопка отправки --- */
@@ -85,7 +86,7 @@
     display: block;
     width: 100%;
     text-align: center;
-    background-color: #561C24; /* Основной цвет */
+    background-color: #1c2d56; /* Основной цвет */
     color: #fff; /* Основной фон */
     padding: 15px;
     border-radius: 50px;
@@ -96,7 +97,7 @@
   }
   
   .button:hover {
-    background-color: #6D2932;
+    background-color: #1c2d56;
   }
   
   /* --- Адаптивность --- */
@@ -110,7 +111,7 @@
     }
   
     .card-description {
-      font-size: 16px;
+      font-size: 17px;
     }
   
     .button {

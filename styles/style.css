@@ -7,7 +7,7 @@
   
   body {
     font-family: 'Arial';
-    background-color: #E8D8C4;
+    background-color: #fffbf6;
     color: #561C24;
     line-height: 1.6;
     min-height: 100vh;
@@ -33,7 +33,7 @@
   
   /* --- Стили для Header --- */
   header {
-    background: #561C24;
+    background: #1c2d56;
     padding: 2rem 1rem;
     text-align: center;
   }
@@ -60,15 +60,16 @@
   }
   
   section h2, section h3 {
-    color: #561C24;
+    color: #1c2d56;
   }
   
   section p {
-    color: #6D2932;
+    color: #000;
+    font-weight: 600;
   }
   
   .btn {
-    background-color: #561C24;
+    background-color: #1c2d56;
     color: #fff;
     padding: 0.7rem 2.5rem;
     border: none;
@@ -79,7 +80,7 @@
   }
   
   button:hover {
-    background-color: #6D2932;
+    background-color: #1c2d56;
   }
   
   button:active {
@@ -89,13 +90,13 @@
   /* --- Карточки --- */
   .card {
     background-color: #fffaf3;
-    border: 2px solid #dcc6ab;
+    border: 2px solid #efe6db;
     border-radius: 10px;
     box-shadow: -1px 5px 7px rgba(0,0,0,0.1);
   }
   
   .card-header {
-    background-color: #6D2932;
+    background-color: #233a70;
     color: #fff;
     padding: 1rem;
     border-radius: 10px 10px 0 0;
@@ -115,13 +116,14 @@
   }
   
   .card li {
-    color: #561C24;
+    color: #000;
     margin-bottom: 0.8rem;
+    font-weight: 600;
   }
   
   /* --- Кнопки --- */
   .button {
-    background-color: #561C24;
+    background-color: #1c2d56;
     color: #fff;
     padding: 1rem 2rem;
     border-radius: 5px;
@@ -130,14 +132,14 @@
   }
   
   .button:hover {
-    background-color: #6D2932;
+    background-color: #1c2d56;
   }
   .f1{
     font-size: 1.4rem;
   }
   /* --- Стили для Footer --- */
   footer {
-    background-color: #6D2932;
+    background-color: #1c2d56;
     color: #fff;
     padding: 2rem 0;
     text-align: center;

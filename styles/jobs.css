@@ -6,15 +6,15 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #E8D8C4; /* Основной цвет фона */
-  color: #561C24; /* Основной цвет текста */
+  background-color: #fffbf6; /* Основной цвет фона */
+  color: #1c2d56; /* Основной цвет текста */
   padding: 20px;
 }
 
 h1 {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
-  color: #561C24; /* Основной цвет заголовков */
+  color: #1c2d56; /* Основной цвет заголовков */
   text-align: center;
   margin-bottom: 20px;
 }
@@ -26,9 +26,9 @@ h1 {
 }
 
 .job-card {
-    background-color: #fffaf3; /* Основной цвет */
+    background-color: #fff; /* Основной цвет */
     border-radius: 15px;
-    border: 1px solid #d1b58f; /* Основной цвет */
+    border: 1px solid #efe6db; /* Основной цвет */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: box-shadow 0.3s ease;
@@ -40,20 +40,22 @@ h1 {
 }
 
 .job-header {
-background-color: #fffaf3;
+  background-color: #fff;
   padding: 20px;
+  padding-bottom: 10px;
 }
 
 .job-title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
-  color: #561C24; 
+  color: #1c2d56; 
 }
 
 .job-category {
-  font-size: 14px;
-  color: #6D2932;  /* Тусклый текст */
+  font-size: 15px;
+  color: #1c2d56;  /* Тусклый текст */
   margin-top: 4px;
+  font-weight: 600;
 }
 
 .job-content {
@@ -62,19 +64,20 @@ background-color: #fffaf3;
 
 .job-description {
     font-size: 16px;
-    color: #6D2932; 
+    color: #000; 
     margin-bottom: 12px;
+    font-weight: 600;
   }
 
 .job-price {
   font-size: 16px;
   font-weight: bold;
-  color: #561C24; 
+  color: #1c2d56; 
 }
 
 .job-footer {
   padding: 20px;
-  background-color: #fffaf3; /* Фон футера карточки */
+  background-color: #fff; /* Фон футера карточки */
   text-align: center;
 }
 
@@ -82,7 +85,7 @@ background-color: #fffaf3;
   display: inline-block;
   width: 100%;
   padding: 12px;
-  background-color: #561C24; /* Основной цвет */
+  background-color: #1c2d56; /* Основной цвет */
   color: #fff; /* Основной цвет текста */
   font-size: 18px;
   font-weight: bold;
@@ -92,7 +95,7 @@ background-color: #fffaf3;
 }
 
 .apply-button:hover {
-    background-color: #6D2932; 
+    background-color: #1c2d56; 
 }
 
 @media (min-width: 768px) {

@@ -7,8 +7,8 @@
   
   body {
     font-family: 'Arial', sans-serif;
-    background-color: #E8D8C4;
-    color: #561C24;
+    background-color: #fffbf6;
+    color: #1c2d56;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
@@ -42,13 +42,13 @@
   
   .title {
     font-size: 24px;
-    color: #561C24;
+    color: #1c2d56;
     margin-bottom: 10px;
   }
   
   .button {
     display: inline-block;
-    background-color: #561C24;
+    background-color: #1c2d56;
     color: #fff;
     padding: 12px 30px;
     border-radius: 30px;
@@ -57,7 +57,7 @@
   }
   
   .button:hover {
-    background-color: #6D2932;
+    background-color: #1c2d56;
   }
   
   /* --- Список заказов --- */
@@ -70,7 +70,7 @@
   /* --- Карточка заказа --- */
   .card {
     background-color: #fffaf3;
-    border: 1px solid #d1b58f;
+    border: 1px solid #efe6db;
     border-radius: 10px;
     box-shadow: -1px 5px 7px rgba(0, 0, 0, 0.1);
   }
@@ -79,6 +79,7 @@
   .card-header {
     background-color: #fffaf3;
     padding: 20px;
+    padding-bottom: 5px;
     border-radius: 10px 10px 0 0;
     /* text-align: center; */
   }
@@ -86,12 +87,13 @@
   .card-title {
     font-size: 20px;
     font-weight: bold;
-    color: #561C24;
+    color: #1c2d56;
   }
   
   .card-category {
-    font-size: 14px;
-    color: #6D2932;
+    font-size: 15px;
+    color: #1c2d56;
+    font-weight: 700;
   }
   
   .card-content {
@@ -102,12 +104,13 @@
   .price {
     font-size: 18px;
     font-weight: bold;
-    color: #561C24;
+    color: #1c2d56;
   }
   
   .status {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-size: 16px;
+    font-weight: 600;
   }
   
   .status .active {
@@ -127,7 +130,7 @@
   
   .button-secondary {
     display: inline-block;
-    background-color: #561C24;
+    background-color: #1c2d56;
     color: #fff;
     padding: 12px 30px;
     border-radius: 20px;
@@ -137,7 +140,7 @@
   }
   
   .button-secondary:hover {
-    background-color: #6D2932;
+    background-color: #162445;
   }
   
   /* --- Модификаторы отступов --- */
@@ -162,16 +165,16 @@
 
   
     .title {
-      font-size: 22px;
+      font-size: 26px;
     }
   
     .button {
-      padding: 12px 30px;
-      font-size: 14px;
+      padding: 10px 30px;
+      font-size: 15px;
     }
   
     .card-title {
-      font-size: 18px;
+      font-size: 20px;
     }
   
     .price {
@@ -180,7 +183,7 @@
   
     .button-secondary {
       padding: 10px 30px;
-      font-size: 14px;
+      font-size: 15px;
     }
   }
   
