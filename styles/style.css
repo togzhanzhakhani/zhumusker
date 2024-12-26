@@ -317,3 +317,13 @@ nav a:hover {
 #contact li{
   font-weight: 600;
 }
+
+article .card-header p{
+  color: #fff;
+}
+article{
+  text-align: start;
+}
+article a{
+  color: purple;
+}
